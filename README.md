@@ -27,9 +27,12 @@ Optional
 For virtual environment (recommended):
 
 python -m venv venv
-# Windows
+
+ 
+ Windows
 venv\Scripts\activate
 
 
+You can find the live app here: https://solar-challange-week0-5etmgmqfz5zfqscypodu6r.streamlit.app/
 
 Then install dependencies inside the virtual environment.
