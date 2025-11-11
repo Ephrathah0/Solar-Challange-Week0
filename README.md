@@ -22,6 +22,25 @@ Open your browser at: http://localhost:8501
 
 Upload your CSV files when prompted or use default data (if included).
 
+Example Usage
+Load Dataset:
+import pandas as pd
+
+benin_df = pd.read_csv('data/benin.csv')
+print(benin_df.head())
+
+Plot GHI Time Series:
+import matplotlib.pyplot as plt
+
+plt.plot(benin_df['timestamp'], benin_df['GHI'])
+plt.title('GHI Over Time - Benin')
+plt.xlabel('Date')
+plt.ylabel('GHI (W/m^2)')
+plt.show()
+
+Launch Dashboard:
+streamlit run dashboard/solar_dashboard.py
+
 Optional
 
 For virtual environment (recommended):
